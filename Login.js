@@ -1,14 +1,15 @@
 function validate(){
-    var username=document.getElementById("username").value
-    var password=document.getElementById("password").value
+    var username=document.getElementById("username").value;
+    var password=document.getElementById("password").value;
 
     if(username=="admin" && password =="user"){
         alert("Login succesfull!");
-        window.location.href="C:\Users\Miho\VS CODE\WebApp\Index.html";
-        return;
+        window.location="Index.html";
     }
-    else
+    else 
     {
         alert("Login failed!");
+        return;
     }
+    
 }
