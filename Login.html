@@ -29,12 +29,49 @@
     </form>
 
     <h4>Don't have an account?</h4> 
-    <button type="button" onclick="pop()" id="sign">Sign up</button>
+    <button onclick="document.getElementById('id01').style.display='block'" id="sign">Sign up</button>
     </div>
 </div>
 
+<div id="id01" class="modal">
+    <form class="modal-content" method="POST" autocomplete="on">
+        <div class="container">
+            <h1 style="text-align: center;">Sign up</h1>
+            <p style="font-size: larger; ">Please fill in this form to create an account.</p>
+            <hr>
+            
+            <label for="username"><b>Username</b></label><br>
+            <input type="text" placeholder="Enter Username" id="usern" name="" required><br>
+            
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email (someone@adress.com)" name="" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
 
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="" id="psw" required>
 
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="" id="psw-r" required>
+        
+            <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+            </label>
+
+            <div class="clearfix">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script>
+    var modal = document.getElementById('id01');
+    window.onclick = function(event){
+        if (event.target === modal){
+            modal.style.display="none";
+        }
+    }
+</script>
 
 </body>
 

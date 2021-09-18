@@ -57,11 +57,11 @@ body{
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
     .login{
-        height:500px;
-        width: 600px;
+        width: 50%;
+        height: 50vh;
         text-align: center;
         padding: 20px;
-        position: absolute;
+        position: fixed;
         top: 20%;
         right: 20%;
     }
@@ -82,17 +82,16 @@ body{
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
     .login{
-        height:500px;
-        width: 600px;
+        margin: 5% auto 15% auto;
         text-align: center;
         padding: 20px;
-        position: absolute;
-        top: 20%;
-        right: 33.33%;
+        position: fixed;
+        top: 10%;
+        right: 25%; 
+        width: 48%;
+        height: 50vh;
     }
   }
-
-
 
 .login{
     border: 2px solid black;
@@ -118,6 +117,7 @@ input[type=text], input[type=password] {
 
 }
 
+
 button {
     background-color: rgba(176, 212, 93, 0.548);
     color: white;
@@ -128,6 +128,7 @@ button {
     width: 100%;
 }
 
+
 button:hover {
     opacity: 0.8;
 }
@@ -136,4 +137,56 @@ button:hover {
 #sign{
     background-color: rgb(24, 24, 148);
     width: 50%;
+    cursor: pointer;
 }
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: darkslategrey;
+}
+
+
+.modal-content {
+    margin: 5% auto 15% auto;
+    border: 1px solid black;
+    width: 60%;
+    background-color: rgb(212, 131, 101);
+}
+
+.cancelbtn, .signupbtn {
+    float: left;
+    width: 50%;
+    border: 2px solid white;
+    
+}
+
+
+@media screen and (max-width: 500px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+    .modal-content{
+        width: 100%;
+        height: 100vh;
+        z-index: 2;
+        overflow: auto;
+    }
+}
+
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .container {
+    padding: 16px;
+  }
