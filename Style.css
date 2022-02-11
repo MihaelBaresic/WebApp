@@ -1,5 +1,5 @@
 body{
-    background-color: darkslategrey;
+    background-color: lightgray;  
     margin: 0;
     padding: 0; 
     font-family: sans-serif;
@@ -65,6 +65,9 @@ body{
         top: 20%;
         right: 20%;
     }
+    button{
+      font-size: 1vw;
+    }
   }
 
   @media only screen and (min-width: 1024px) {
@@ -89,13 +92,23 @@ body{
         top: 10%;
         right: 25%; 
         width: 48%;
-        height: 50vh;
+        height: 60vh;
+    }
+    button{
+      font-size: 1vw;
     }
   }
 
+
+.Home{
+    text-align: center;
+}
+
+
 .login{
     border: 2px solid black;
-    background-color: rgb(212, 131, 101);
+    background-color: #143d59;
+    color: white;
     font-weight: bold;
     text-align: center;
 }
@@ -122,10 +135,11 @@ button {
     background-color: rgba(176, 212, 93, 0.548);
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: 16px 0;
     border: none;
     cursor: pointer;
     width: 100%;
+    font-size: 16px;
 }
 
 
@@ -134,12 +148,17 @@ button:hover {
 }
 
 
+
 #sign{
-    background-color: rgb(24, 24, 148);
+    background-color: #f49f1c;
     width: 50%;
     cursor: pointer;
+    margin: -20px 0 0 0;
 }
 
+#sbmt{
+    margin: 8px 0;
+}
 
 .modal {
     display: none;
@@ -149,15 +168,16 @@ button:hover {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: darkslategrey;
+    background-color: lightgray;
 }
-
 
 .modal-content {
     margin: 5% auto 15% auto;
-    border: 1px solid black;
+    border: 2px solid black;
+    padding: 15px 80px;
     width: 60%;
-    background-color: rgb(212, 131, 101);
+    background-color: #143d59;
+    color: white;
 }
 
 .cancelbtn, .signupbtn {
@@ -178,7 +198,7 @@ button:hover {
         z-index: 2;
         overflow: auto;
     }
-}
+  }
 
 
   .clearfix::after {
@@ -189,4 +209,240 @@ button:hover {
 
   .container {
     padding: 16px;
+  }
+
+  #tbl_name{
+    text-align:center;
+  }
+
+  #customers {
+    margin: 11% 30%; 
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 40%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  #about{
+    text-align: center;
+    font-size: 16px;
+  }
+
+  #contact{
+    text-align: center;
+    font-size: 16px;
+  }
+
+  footer{
+    background: black;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 100px;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    box-sizing: border-box;
+  }
+
+
+
+  .fa-user-times{
+    font-size: 18px;
+    float: right;
+    color: black;
+    cursor: pointer;
+  }
+
+  .fa-edit{
+    font-size: 22px;
+    float: right;
+    color: brown;
+    cursor: pointer;
+    margin-top: 3px;
+  }
+
+
+  ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  ul.topnav li {float: left;}
+  
+  ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+
+  
+  ul.topnav li a:hover:not(.active) {background-color: #111;}
+  
+  ul.topnav li a.active {background-color: #04AA6D;}
+  
+  ul.topnav li.right {float: right;}
+  
+  @media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+  }
+
+  .heading {
+    font-size: 25px;
+    margin-right: 25px;
+  }
+  
+  .tooltip {
+    float: right;
+  }
+  
+  .tooltip .tooltiptext {
+    display: none;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute; 
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    display: block;
+  }
+
+  .tooltip .tooltiptext {
+    margin-left: 30px;
+  }
+
+  ul.topnav {
+    top: 0;
+    width: 100%;
+  }
+
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 10% auto 10% auto;
+    position: absolute;
+    left: 10%;
+    background-color: rgb(70, 122, 189);
+    
+  }
+
+
+  .card-2{
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 5% auto 10% auto;
+    position: absolute;
+    left: 55%;
+    margin-top: 150px;
+    padding: 20px 12px;
+    background-color: rgb(70, 122, 189);
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover, .Hcard:hover .Ucard:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .user-container {
+    padding: 2px 16px;
+  }
+
+  @media (max-width: 1200px) {
+    .card {
+      width: 100%;
+      position: relative;
+      left: 0%;
+    }
+    .card-2{
+      width: 100%;
+      position: relative;
+      left: 0%;
+      margin-top: 0px;
+    }
+    .star-container{
+      margin:200px 10% auto;;
+    }
+  }
+
+  #my_image{
+    margin: 10px 0;
+  }
+
+  #u_image0{
+    cursor: pointer;
+  }
+
+  .Hcard {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    float: right;
+    background-color: rgb(70, 122, 189);
+    margin: 6%;
+  }
+
+  .Ucard {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    float: right;
+    background-color: rgb(70, 122, 189);
+    margin: 6%;
+    padding: 20px;
+
+  }
+
+  @media (max-width: 1050px) {
+    .Hcard .Ucard{
+      float: left;
+    }
+    .fa-user-times{
+      margin: 10px;
+    }
+  }
+
+
+  .Hcard img{
+    max-block-size: 500px;
+  }
+
+  .user-config img{
+    max-block-size: 400px;
   }

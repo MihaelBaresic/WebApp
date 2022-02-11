@@ -7,8 +7,9 @@
         {
             "type": "pwa-chrome",
             "request": "launch",
-            "name": "Open Login.html",
-            "file": "c:\\Users\\Miho\\VS CODE\\WebApp\\Login.html"
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost/WebApp/Index.php",
+            "webRoot": "${workspaceFolder}"
         }
     ]
 }
